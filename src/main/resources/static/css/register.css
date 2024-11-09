@@ -1,0 +1,127 @@
+/* Reset padding và margin của các phần tử trong form */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Thiết lập font, overflow cho body */
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+/* Vị trí và định dạng cho container và các phần tử trong form */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 1rem;
+    height: 100%;
+}
+
+.login-content {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2.title {
+    margin: 15px 0;
+    color: #333;
+    font-size: 2rem;
+}
+
+/* Định dạng các input và label trong form */
+.input-div {
+    position: relative;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.input-div input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background: none;
+    color: #555;
+}
+
+.input-div i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.input-div h5 {
+    position: absolute;
+    left: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 1rem;
+}
+
+/* Hiển thị thông báo lỗi */
+.error-message {
+    display: none;
+    font-size: 0.9rem;
+    color: red;
+    margin-top: 5px;
+}
+
+/* Hiển thị lỗi khi có lỗi */
+.input-div.error .error-message {
+    display: block;
+}
+
+.input-div.error input {
+    border-color: red;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #38d39f;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 1.2rem;
+}
+
+/* Hiệu ứng hover cho nút đăng ký */
+.btn:hover {
+    background-color: #32be8f;
+}
+
+.or {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #999;
+}
+
+.btn-back-login {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #d3d3d3;
+    color: #333;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn-back-login:hover {
+    background-color: #bcbcbc;
+}
